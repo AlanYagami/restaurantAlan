@@ -1,18 +1,9 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import Navigation from './src/config/navigation/Navigation';
+import {} from "react";
+import { StyleSheet, Text, View } from "react-native";
+import Navigation from "./src/config/navigation/Navigation";
+import { app, auth, db } from "./src/config/util/firebaseConecction.js";
+
 
 export default function App() {
-  return (
-    <Navigation />
-  );
+  return <Navigation />;
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
